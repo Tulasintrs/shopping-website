@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>🛒 ShopEase</h2>
+    <div>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('products')">Products</a>
+        <a onclick="showPage('cart')">Cart</a>
+        <a onclick="showPage('about')">About</a>
+        <a onclick="showPage('contact')">Contact</a>
+    </div>
+</div>
+
+<!-- HOME -->
+<div id="home" class="page active">
+    <div class="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Easy Online Shopping</p>
+    </div>
+</div>
+
+<!-- PRODUCTS -->
+<div id="products" class="page">
+    <h2>Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <img src="apple.jpg">
+            <h4>Apple</h4>
+            <p>₹120 / kg</p>
+            <button onclick="addToCart('Apple',120)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="dal.jpg">
+            <h4>Dal</h4>
+            <p>₹90 / kg</p>
+            <button onclick="addToCart('Dal',90)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="spices.jpg">
+            <h4>Spices</h4>
+            <p>₹80</p>
+            <button onclick="addToCart('Spices',80)">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- CART -->
+<div id="cart" class="page">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3 id="total"></h3>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page">
+    <h2>About Us</h2>
+    <p>ShopEase is a simple online shopping website.</p>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+    <h2>Contact Us</h2>
+    <input placeholder="Name">
+    <input placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Submit</button>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div>
+            <h3>ShopEase</h3>
+            <p>Your trusted online shopping store</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <p>Home</p>
+            <p>Products</p>
+            <p>Cart</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>📍 India</p>
+            <p>📧 support@shopease.com</p>
+            <p>📞 9876543210</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 ShopEase. All Rights Reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
